@@ -466,7 +466,7 @@ Mobility_Header.BorderSizePixel = 3
 Mobility_Header.Position = UDim2.new(0.302749783, 0, 0.256587863, 0)
 Mobility_Header.Size = UDim2.new(0, 78, 0, 32)
 Mobility_Header.Font = Enum.Font.SourceSans
-Mobility_Header.Text = "Mobility"
+Mobility_Header.Text = "NOCLIP LOL"
 Mobility_Header.TextColor3 = Color3.new(0, 0, 0)
 Mobility_Header.TextSize = 20
 Mobility_Header.TextStrokeColor3 = Color3.new(0.976471, 0.976471, 0.976471)
@@ -528,7 +528,7 @@ Fly_Box.BorderSizePixel = 2
 Fly_Box.Position = UDim2.new(0.30179733, 0, 0.562010407, 0)
 Fly_Box.Size = UDim2.new(0, 78, 0, 30)
 Fly_Box.Font = Enum.Font.SourceSans
-Fly_Box.Text = "Fly"
+Fly_Box.Text = "Fly {BAD}"
 Fly_Box.TextColor3 = Color3.new(0, 0, 0)
 Fly_Box.TextSize = 14
 
@@ -564,7 +564,7 @@ Airwalk_Box.BorderSizePixel = 2
 Airwalk_Box.Position = UDim2.new(0.30179736, 0, 0.429868877, 0)
 Airwalk_Box.Size = UDim2.new(0, 78, 0, 29)
 Airwalk_Box.Font = Enum.Font.SourceSans
-Airwalk_Box.Text = "Airwalk"
+Airwalk_Box.Text = "Airwalk {BAD}"
 Airwalk_Box.TextColor3 = Color3.new(0, 0, 0)
 Airwalk_Box.TextSize = 14
 
@@ -685,7 +685,7 @@ Noclip_Box_2.BorderSizePixel = 2
 Noclip_Box_2.Position = UDim2.new(0.30179736, 0, 0.828345895, 0)
 Noclip_Box_2.Size = UDim2.new(0, 78, 0, 30)
 Noclip_Box_2.Font = Enum.Font.SourceSans
-Noclip_Box_2.Text = "Speed+"
+Noclip_Box_2.Text = "Speed+ {BAD}"
 Noclip_Box_2.TextColor3 = Color3.new(0, 0, 0)
 Noclip_Box_2.TextSize = 14
 end))
@@ -693,7 +693,7 @@ end))
 Mouse.KeyDown:Connect(function(Key)
     if Key == FlyKey then
         if FirstFly then
-            Notify("Citizen", "You can now fly, like a bird.")
+            Notify("ZETOX NOT CITIZEN LOL")
             FirstFly = false
         end
         togglefly()
