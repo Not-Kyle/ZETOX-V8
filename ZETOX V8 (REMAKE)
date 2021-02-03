@@ -423,8 +423,8 @@ ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 ScreenGui.ResetOnSpawn = false
 
 Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.new(0, 0, 0)
-Frame.BorderColor3 = Color3.new(0, 0, 0)
+Frame.BackgroundColor3 = Color3.new(32, 132, 233)
+Frame.BorderColor3 = Color3.new(32, 132, 233)
 Frame.BorderSizePixel = 3
 Frame.Position = UDim2.new(0.0859607384, 0, 0.271775454, 0)
 Frame.Size = UDim2.new(0, 446, 0, 229)
@@ -434,8 +434,8 @@ Frame.Active = true
 
 ZV8_Header.Name = "ZV8_Header"
 ZV8_Header.Parent = Frame
-ZV8_Header.BackgroundColor3 = Color3.new(1, 0.027451, 0.823529)
-ZV8_Header.BorderColor3 = Color3.new(0.0196078, 0.0235294, 0.0196078)
+ZV8_Header.BackgroundColor3 = Color3.new(37, 132, 233)
+ZV8_Header.BorderColor3 = Color3.new(37, 132, 233)
 ZV8_Header.BorderSizePixel = 3
 ZV8_Header.Position = UDim2.new(0.00224215258, 0, 0, 0)
 ZV8_Header.Size = UDim2.new(0, 445, 0, 50)
