@@ -423,8 +423,8 @@ ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 ScreenGui.ResetOnSpawn = false
 
 Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.new(0.666667, 0.333333, 1)
-Frame.BorderColor3 = Color3.new(0.00392157, 0.00784314, 0.0117647)
+Frame.BackgroundColor3 = Color3.new(0, 0, 0)
+Frame.BorderColor3 = Color3.new(0, 0, 0)
 Frame.BorderSizePixel = 3
 Frame.Position = UDim2.new(0.0859607384, 0, 0.271775454, 0)
 Frame.Size = UDim2.new(0, 446, 0, 229)
