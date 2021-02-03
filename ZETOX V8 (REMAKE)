@@ -453,7 +453,7 @@ Combat_Header.BorderSizePixel = 3
 Combat_Header.Position = UDim2.new(0.0515695103, 0, 0.256587863, 0)
 Combat_Header.Size = UDim2.new(0, 78, 0, 32)
 Combat_Header.Font = Enum.Font.SourceSans
-Combat_Header.Text = "Combat"
+Combat_Header.Text = "AIMBOT ONLY"  --the fuck you using Item Esp on prison for
 Combat_Header.TextColor3 = Color3.new(0, 0, 0)
 Combat_Header.TextSize = 20
 Combat_Header.TextStrokeColor3 = Color3.new(0.976471, 0.976471, 0.976471)
@@ -479,7 +479,7 @@ Animations_Header.BorderSizePixel = 3
 Animations_Header.Position = UDim2.new(0.545087218, 0, 0.256587863, 0)
 Animations_Header.Size = UDim2.new(0, 78, 0, 32)
 Animations_Header.Font = Enum.Font.SourceSans
-Animations_Header.Text = "Anims"
+Animations_Header.Text = "Anims {ALL BAD}"
 Animations_Header.TextColor3 = Color3.new(0, 0, 0)
 Animations_Header.TextSize = 20
 Animations_Header.TextStrokeColor3 = Color3.new(0.976471, 0.976471, 0.976471)
@@ -504,7 +504,7 @@ PriestANIM_Box.BorderSizePixel = 2
 PriestANIM_Box.Position = UDim2.new(0.543958306, 0, 0.701600254, 0)
 PriestANIM_Box.Size = UDim2.new(0, 78, 0, 30)
 PriestANIM_Box.Font = Enum.Font.SourceSans
-PriestANIM_Box.Text = "Priest Anim"
+PriestANIM_Box.Text = "Priest Anim {BAD}"
 PriestANIM_Box.TextColor3 = Color3.new(0, 0, 0)
 PriestANIM_Box.TextSize = 14
 
@@ -516,7 +516,7 @@ GunANIM_Box.BorderSizePixel = 2
 GunANIM_Box.Position = UDim2.new(0.543958306, 0, 0.434235752, 0)
 GunANIM_Box.Size = UDim2.new(0, 78, 0, 30)
 GunANIM_Box.Font = Enum.Font.SourceSans
-GunANIM_Box.Text = "Gun Anim"
+GunANIM_Box.Text = "Gun Anim {BAD}"
 GunANIM_Box.TextColor3 = Color3.new(0, 0, 0)
 GunANIM_Box.TextSize = 14
 
@@ -540,7 +540,7 @@ DJumpANIM_Box.BorderSizePixel = 2
 DJumpANIM_Box.Position = UDim2.new(0.543958306, 0, 0.561674178, 0)
 DJumpANIM_Box.Size = UDim2.new(0, 78, 0, 30)
 DJumpANIM_Box.Font = Enum.Font.SourceSans
-DJumpANIM_Box.Text = "DJump Anim"
+DJumpANIM_Box.Text = "DJump Anim {BAD}"
 DJumpANIM_Box.TextColor3 = Color3.new(0, 0, 0)
 DJumpANIM_Box.TextSize = 14
 
@@ -552,7 +552,7 @@ Aimbot_Box.BorderSizePixel = 2
 Aimbot_Box.Position = UDim2.new(0.0518557951, 0, 0.429868907, 0)
 Aimbot_Box.Size = UDim2.new(0, 78, 0, 30)
 Aimbot_Box.Font = Enum.Font.SourceSans
-Aimbot_Box.Text = "Aimbot"
+Aimbot_Box.Text = "Aimbot {Good}"
 Aimbot_Box.TextColor3 = Color3.new(0, 0, 0)
 Aimbot_Box.TextSize = 14
 
@@ -576,7 +576,7 @@ AntiAim_Box.BorderSizePixel = 2
 AntiAim_Box.Position = UDim2.new(0.0518557951, 0, 0.557495415, 0)
 AntiAim_Box.Size = UDim2.new(0, 78, 0, 30)
 AntiAim_Box.Font = Enum.Font.SourceSans
-AntiAim_Box.Text = "AntiAim"
+AntiAim_Box.Text = "AntiAim {BAD}"
 AntiAim_Box.TextColor3 = Color3.new(0, 0, 0)
 AntiAim_Box.TextSize = 14
 
@@ -601,7 +601,7 @@ UziTP_Box.BorderSizePixel = 2
 UziTP_Box.Position = UDim2.new(0.777142167, 0, 0.434235752, 0)
 UziTP_Box.Size = UDim2.new(0, 78, 0, 30)
 UziTP_Box.Font = Enum.Font.SourceSans
-UziTP_Box.Text = "Uzi"
+UziTP_Box.Text = "Uzi {TS}"
 UziTP_Box.TextColor3 = Color3.new(0, 0, 0)
 UziTP_Box.TextSize = 14
 
@@ -613,7 +613,7 @@ GlockTP_Box.BorderSizePixel = 2
 GlockTP_Box.Position = UDim2.new(0.777142107, 0, 0.570407808, 0)
 GlockTP_Box.Size = UDim2.new(0, 78, 0, 30)
 GlockTP_Box.Font = Enum.Font.SourceSans
-GlockTP_Box.Text = "Glock"
+GlockTP_Box.Text = "Glock {TS}"
 GlockTP_Box.TextColor3 = Color3.new(0, 0, 0)
 GlockTP_Box.TextSize = 14
 
@@ -625,7 +625,7 @@ SawTP_Box.BorderSizePixel = 2
 SawTP_Box.Position = UDim2.new(0.777142167, 0, 0.701412141, 0)
 SawTP_Box.Size = UDim2.new(0, 78, 0, 30)
 SawTP_Box.Font = Enum.Font.SourceSans
-SawTP_Box.Text = "Sawed Off"
+SawTP_Box.Text = "Sawed Off {TS}"
 SawTP_Box.TextColor3 = Color3.new(0, 0, 0)
 SawTP_Box.TextSize = 14
 
@@ -649,7 +649,7 @@ DogANIM_Box.BorderSizePixel = 2
 DogANIM_Box.Position = UDim2.new(0.543958306, 0, 0.828237832, 0)
 DogANIM_Box.Size = UDim2.new(0, 78, 0, 30)
 DogANIM_Box.Font = Enum.Font.SourceSans
-DogANIM_Box.Text = "Dog Anim"
+DogANIM_Box.Text = "Dog Anim {BAD}"
 DogANIM_Box.TextColor3 = Color3.new(0, 0, 0)
 DogANIM_Box.TextSize = 14
 
@@ -661,7 +661,7 @@ GuardV2_Box.BorderSizePixel = 2
 GuardV2_Box.Position = UDim2.new(0.0518557951, 0, 0.688499808, 0)
 GuardV2_Box.Size = UDim2.new(0, 78, 0, 30)
 GuardV2_Box.Font = Enum.Font.SourceSans
-GuardV2_Box.Text = "Guard V2"
+GuardV2_Box.Text = "Guard V2 {BAD}"
 GuardV2_Box.TextColor3 = Color3.new(0, 0, 0)
 GuardV2_Box.TextSize = 14
 
