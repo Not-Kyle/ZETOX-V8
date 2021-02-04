@@ -516,7 +516,7 @@ GunANIM_Box.BorderSizePixel = 2
 GunANIM_Box.Position = UDim2.new(0.543958306, 0, 0.434235752, 0)
 GunANIM_Box.Size = UDim2.new(0, 78, 0, 30)
 GunANIM_Box.Font = Enum.Font.SourceSans
-GunANIM_Box.Text = "Gun Anim {BAD}"
+GunANIM_Box.Text = "Gun Anim {Works}"
 GunANIM_Box.TextColor3 = Color3.new(0, 0, 0)
 GunANIM_Box.TextSize = 14
 
@@ -673,7 +673,7 @@ ItemEsp_Box.BorderSizePixel = 2
 ItemEsp_Box.Position = UDim2.new(0.0518558025, 0, 0.819612324, 0)
 ItemEsp_Box.Size = UDim2.new(0, 78, 0, 29)
 ItemEsp_Box.Font = Enum.Font.SourceSans
-ItemEsp_Box.Text = "Item Esp"
+ItemEsp_Box.Text = "Item Esp {W}"
 ItemEsp_Box.TextColor3 = Color3.new(0, 0, 0)
 ItemEsp_Box.TextSize = 14
 
