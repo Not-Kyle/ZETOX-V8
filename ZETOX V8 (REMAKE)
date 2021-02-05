@@ -649,7 +649,7 @@ DogANIM_Box.BorderSizePixel = 2
 DogANIM_Box.Position = UDim2.new(0.543958306, 0, 0.828237832, 0)
 DogANIM_Box.Size = UDim2.new(0, 78, 0, 30)
 DogANIM_Box.Font = Enum.Font.SourceSans
-DogANIM_Box.Text = "Dog Anim {BAD}"
+DogANIM_Box.Text = "Dog Anim"
 DogANIM_Box.TextColor3 = Color3.new(0, 0, 0)
 DogANIM_Box.TextSize = 14
 
