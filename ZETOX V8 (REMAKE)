@@ -440,7 +440,8 @@ ZV8_Header.BorderSizePixel = 3
 ZV8_Header.Position = UDim2.new(0.00224215258, 0, 0, 0)
 ZV8_Header.Size = UDim2.new(0, 445, 0, 50)
 ZV8_Header.Font = Enum.Font.SourceSans
-ZV8_Header.Text = "ZETOX V8 KYLES VERISON"
+ZV8_Header.Text = "ZETOX V8 KYLES VERISON
+ Use Citizens With This"
 ZV8_Header.TextColor3 = Color3.new(0, 0, 0)
 ZV8_Header.TextSize = 20
 ZV8_Header.TextStrokeColor3 = Color3.new(0.976471, 0.976471, 0.976471)
@@ -991,16 +992,3 @@ Press K to Increase your Aimvelocity By 1
 Press L to Decrease your aimvelocity By 1
 Press E to Repeat Shoot someone until they die (Press the "Aimbot" box first)
 ]])
-
-ZV8_Header.Name = "ZV8_Header"
-ZV8_Header.Parent = Frame
-ZV8_Header.BackgroundColor3 = Color3.new(37, 132, 233)
-ZV8_Header.BorderColor3 = Color3.new(37, 132, 233)
-ZV8_Header.BorderSizePixel = 3
-ZV8_Header.Position = UDim2.new(0.00224215258, 0, 0, 0)
-ZV8_Header.Size = UDim2.new(0, 445, 0, 50)
-ZV8_Header.Font = Enum.Font.SourceSans
-ZV8_Header.Text = "                                                                                             Use Citizens With this"
-ZV8_Header.TextColor3 = Color3.new(0, 0, 0)
-ZV8_Header.TextSize = 8
-ZV8_Header.TextStrokeColor3 = Color3.new(0.976471, 0.976471, 0.976471)
