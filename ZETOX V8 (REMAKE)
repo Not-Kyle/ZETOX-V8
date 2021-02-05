@@ -479,7 +479,7 @@ Animations_Header.BorderSizePixel = 3
 Animations_Header.Position = UDim2.new(0.545087218, 0, 0.256587863, 0)
 Animations_Header.Size = UDim2.new(0, 78, 0, 32)
 Animations_Header.Font = Enum.Font.SourceSans
-Animations_Header.Text = "Anims {ALL BAD}"
+Animations_Header.Text = "Anims"
 Animations_Header.TextColor3 = Color3.new(0, 0, 0)
 Animations_Header.TextSize = 20
 Animations_Header.TextStrokeColor3 = Color3.new(0.976471, 0.976471, 0.976471)
@@ -504,7 +504,7 @@ PriestANIM_Box.BorderSizePixel = 2
 PriestANIM_Box.Position = UDim2.new(0.543958306, 0, 0.701600254, 0)
 PriestANIM_Box.Size = UDim2.new(0, 78, 0, 30)
 PriestANIM_Box.Font = Enum.Font.SourceSans
-PriestANIM_Box.Text = "Priest Anim {BAD}"
+PriestANIM_Box.Text = "Priest Anim"
 PriestANIM_Box.TextColor3 = Color3.new(0, 0, 0)
 PriestANIM_Box.TextSize = 14
 
@@ -540,7 +540,7 @@ DJumpANIM_Box.BorderSizePixel = 2
 DJumpANIM_Box.Position = UDim2.new(0.543958306, 0, 0.561674178, 0)
 DJumpANIM_Box.Size = UDim2.new(0, 78, 0, 30)
 DJumpANIM_Box.Font = Enum.Font.SourceSans
-DJumpANIM_Box.Text = "DJump Anim {BAD}"
+DJumpANIM_Box.Text = "DJump Anim"
 DJumpANIM_Box.TextColor3 = Color3.new(0, 0, 0)
 DJumpANIM_Box.TextSize = 14
 
