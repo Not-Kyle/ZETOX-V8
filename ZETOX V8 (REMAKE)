@@ -1,3 +1,4 @@
+game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer("ZETOX REMAKE BY 703OPPOSITION.  ","All")
 local Players, RService, RStorage, Uis, TweenService, TPService = game:GetService("Players"), game:GetService("RunService"), game:GetService("ReplicatedStorage"), game:GetService("UserInputService"), game:GetService("TweenService"), game:GetService("TeleportService");
 local LocalP, Mouse = Players.LocalPlayer, Players.LocalPlayer:GetMouse()
 local Chat, Mute, UD, UD2, Vec3, Vec2, INew, CordCamera, CF = RStorage.DefaultChatSystemChatEvents.SayMessageRequest, RStorage.DefaultChatSystemChatEvents.MutePlayerRequest, UDim.new, UDim2.new, Vector3.new, Vector2.new, Instance.new, workspace.CurrentCamera.CoordinateFrame, CFrame.new
