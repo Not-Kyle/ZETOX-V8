@@ -1124,4 +1124,10 @@ local chatFrame = player.PlayerGui.Chat.Frame
 chatFrame.ChatChannelParentFrame.Visible = true
 chatFrame.ChatBarParentFrame.Position = chatFrame.ChatChannelParentFrame.Position+UDim2.new(UDim.new(),chatFrame.ChatChannelParentFrame.Size.Y)
 
-
+function onKeyPress(actionName, userInputState, inputObject)
+   if userInputState == Enum.UserInputState.Begin then
+       game.Players.LocalPlayer.Character:BreakJoints()
+   end
+end
+game.ContextActionService:BindAction("keyPress", onKeyPress, false, Enum.KeyCode.P)
+ -- press P to reset you fucking loser
