@@ -988,14 +988,140 @@ ZETOX V8 Keybinds --(BY KYLE NOW)-- All of this is without a real script. Use Ze
 best scripts are Aidez and Citizens (Zetox is made for Citizens basically)"
 
 Press F to Fly resets you for sum reason bad scripting not me
-Press All of this is without a real script. Use Zetox with "Citizens, Aidez, Drpoppa, Cyrus, Amnesia, and other shit
-best scripts are Aidez and Citizens (Zetox is made for Citizens basically)"
+Press X to Noclip
 Press K to Increase your Aimvelocity By 1
 Press L to Decrease your aimvelocity By 1
 Press E to Repeat Shoot someone until they die (Press the "Aimbot" box first)
-]])
-
 Aidez Click fly on only Zetox is sets a Airwalk
 Airwalk is bad no matter what script
 I recommend Aidez because Citizens is overrated and not really that good. (No hate)
+--------------------------------------------------------------------------------------
+KYLE 1780 703OPPSITION
+--------------------------------------------------------------------------------------
+For anyone that wants to know no I am not in 703. I just like the numbers
+I've never been in clans and I dont plan to be
+--------------------------------------------------------------------------------------
+Gaurd is just bad.
+Aimbot is good. Use it in the air hvh or ground
+In the future I will create no slow for the script
+--------------------------------------------------------------------------------------
+ANIMS
+--------------------------------------------------------------------------------------
+For the animations to work when you inject the GUI you cant reset. If you reset you cant use animations again until you rejoin
+When you rejoin reset before you inject the GUI so you can actually stab things and run.
+--------------------------------------------------------------------------------------
+AIMBOT
+--------------------------------------------------------------------------------------
+The only real use for this script is aimbot
+The aimbot can hit at most 400-300 POS away. Go close shots and use glock until it runs out of ammo
+By the way you must inject another script to fly
+The fly is very broken on the script it detects you're reseting. (Use Aidez or Citizens the best for ZETOX)
+--------------------------------------------------------------------------------------
+RESET
+--------------------------------------------------------------------------------------
+I am adding a reset button to the script it wont be on the panel is works in the background
+To use the reset button press P
+I have made this reset button myself
+--------------------------------------------------------------------------------------
+THE STREETS
+--------------------------------------------------------------------------------------
+DO NOT INJECT ON THE STREETS ZETOX IS BANNED
+DO NOT INJECT
+ONLY PRISON
+--------------------------------------------------------------------------------------
+BUTTONS
+--------------------------------------------------------------------------------------
+Most of these buttons are for citizens
+but Aidez is better Aidez has better aimlock
+Like Speed+ its only for Citizens
+Ive never had Airwalk to work if u just click it (ON ANY SCRIPT)
+--------------------------------------------------------------------------------------
+SPY
+--------------------------------------------------------------------------------------
+If have included my own SPY chat spy
+Basically what it does is it reads private messages
+If it says D|U that person is using DrPoppa
+If it has . that the begining of someone command it is Citizens
+Even in command bar for Citizen the priavte chat script reads the command 
+Use this to ur advantage. Know when someone is using DrPoppa or Citizens
+Know when someone is ab to gank you with Citizens
+--------------------------------------------------------------------------------------
+Only buttons that are good alone
+Aimbot
+Item Esp but why would you use this on prison
+NoClip
+GunAnim
+DJump is a back flip
+Priest Anim
+Dog Anim 
+Rejoin
+]])
+
+--THIS SCRIPT WAS MADE BY 703OPPOSITION
+--THIS SCRIPT WAS MADE BY KYLE#1780
+public = false
+--(set to true if you want messeges public)
+publicItalics = true
+--customize private logs
+enabled = true
+--if true will check your messages too
+spyOnMyself = false     --why would u set this true
+-- if true it will show your messages too (dont set it to true or else youre retarded)
+privateProperties = {
+	Color = Color3.fromRGB(255,0,255); 
+	Font = Enum.Font.SourceSansBold; --(Color logger no shit)
+	TextSize = 21
+-- (Change to 16-24) (18 is default)
+}
+---------------------------------------------------------------------------
+local StarterGui = game:GetService("StarterGui")
+game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer("SCRIPT BY 703OPPOSITION.  ","All")
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+local saymsg = game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest")
+local getmsg = game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("OnMessageDoneFiltering")
+local instance = (_G.chatSpyInstance or 0) + 1
+_G.chatSpyInstance = instance
+ 
+local function onChatted(p,msg)
+	if _G.chatSpyInstance == instance then
+		if p==player and msg:lower():sub(1,4)=="/spy" then
+			enabled = not enabled
+			wait(0.3)
+			publicItalics.Text = "{SPY BY KYLE}"
+			StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+		elseif enabled and (spyOnMyself==true or p~=player) then
+			msg = msg:gsub("[\n\r]",''):gsub("\t",' '):gsub("[ ]+",' ')
+			local hidden = true
+			local conn = getmsg.OnClientEvent:Connect(function(packet,channel)
+				if packet.SpeakerUserId==p.UserId and packet.Message==msg:sub(#msg-#packet.Message+1) and (channel=="All" or (channel=="Team" and public==false and Players[packet.FromSpeaker].Team==player.Team)) then
+					hidden = false
+				end
+			end)
+			wait(1)
+			conn:Disconnect()
+			if hidden and enabled then
+				if public then
+					saymsg:FireServer((publicItalics and '').."{SPY BY KYLE SPED} [".. p.Name .."]: "..msg,"All")
+				else
+					privateProperties.Text = "{SPY LOL SPED} [".. p.Name .."]: "..msg
+					StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+				end
+			end
+		end
+	end
+end
+ 
+for _,p in ipairs(Players:GetPlayers()) do
+	p.Chatted:Connect(function(msg) onChatted(p,msg) end)
+end
+Players.PlayerAdded:Connect(function(p)
+	p.Chatted:Connect(function(msg) onChatted(p,msg) end)
+end)
+privateProperties.Text = "{SPY BY KYLE}"
+StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+local chatFrame = player.PlayerGui.Chat.Frame
+chatFrame.ChatChannelParentFrame.Visible = true
+chatFrame.ChatBarParentFrame.Position = chatFrame.ChatChannelParentFrame.Position+UDim2.new(UDim.new(),chatFrame.ChatChannelParentFrame.Size.Y)
+
 
