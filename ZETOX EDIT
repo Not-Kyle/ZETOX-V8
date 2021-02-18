@@ -84,148 +84,44 @@ local function ChatSpy()
 end
 ChatSpy()
 
---[[local function togglefly()
-    Flying = not Flying
-    local currenttext = ""
-    if Flying == true then
-        currenttext = "Fly: true"
-        for i,v in pairs(Seats) do
-            if v.Parent ~= nil then
-                v.Parent = RStorage
-            end
-        end
-    else
-        currenttext = "Fly: false"
-        for i,v in pairs(Seats) do
-            if v.Parent ~= nil then
-                v.Parent = game.Workspace
-            end
-        end
-    end
-    Notify("ZETOX", currenttext, "", 3)
-    local T = LocalP.Character.HumanoidRootPart or LocalP.Character:FindFirstChild("Torso")
-    if Flying and LocalP.Character:FindFirstChild("Humanoid") then
-        local Float = INew("Part", LocalP.Character)
-        Float.Name = "Float"
-        Float.Transparency = 1
-        Float.Size = Vector3.new(6,1,6)
-        Float.Anchored = true
-        LocalP.Character.HumanoidRootPart.Anchored = true
-        local CONTROL = {F = 0, B = 0, L = 0, R = 0}
-        local lCONTROL = {F = 0, B = 0, L = 0, R = 0}
-        local SPEED = 0
-            local function FLY()
-                FLYING = true
-                local BG = INew("BodyGyro", T)
-                local BV = INew("BodyVelocity", T)
-	            BG.P = 9e2
-                BG.maxTorque = Vec3(9e9, math.huge, 9e9)
-                BG.cframe = T.CFrame
-                BV.maxForce = Vec3(math.huge, 9e9, math.huge)
-                    coroutine.resume(coroutine.create(function()
-                    wait()
-                        repeat RService.Heartbeat:Wait()
-                        if CONTROL.L + CONTROL.R ~= 0 or CONTROL.F + CONTROL.B ~= 0 then
-                            SPEED = 50
-                        elseif not (CONTROL.L + CONTROL.R ~= 0 or CONTROL.F + CONTROL.B ~= 0) and SPEED ~= 0 then
-                            SPEED = 0
-                        end
-                        if (CONTROL.L + CONTROL.R) ~= 0 or (CONTROL.F + CONTROL.B) ~= 0 then
-                            BV.velocity = ((workspace.CurrentCamera.CoordinateFrame.lookVector * (CONTROL.F + CONTROL.B)) + ((workspace.CurrentCamera.CoordinateFrame * CFrame.new(CONTROL.L + CONTROL.R, (CONTROL.F + CONTROL.B) * 0.2, 0).p) - workspace.CurrentCamera.CoordinateFrame.p)) * SPEED
-                            lCONTROL = {F = CONTROL.F, B = CONTROL.B, L = CONTROL.L, R = CONTROL.R}
-                        elseif (CONTROL.L + CONTROL.R) == 0 and (CONTROL.F + CONTROL.B) == 0 and SPEED ~= 0 then
-                            BV.velocity = ((workspace.CurrentCamera.CoordinateFrame.lookVector * (lCONTROL.F + lCONTROL.B)) + ((workspace.CurrentCamera.CoordinateFrame * CFrame.new(lCONTROL.L + lCONTROL.R, (lCONTROL.F + lCONTROL.B) * 0.2, 0).p) - workspace.CurrentCamera.CoordinateFrame.p)) * SPEED
-                        else
-                            BV.velocity = Vec3(0, 0, 0)
-                        end
-                        BG.cframe = workspace.CurrentCamera.CoordinateFrame
-                        until not FLYING
-                        CONTROL = {F = 0, B = 0, L = 0, R = 0}
-                        lCONTROL = {F = 0, B = 0, L = 0, R = 0}
-                        SPEED = 0
-                        BG:destroy()
-                        BV:destroy()
-                    end))
-                end
-                Mouse.KeyDown:connect(function(KEY)
-                    if KEY:lower() == 'w' then
-                        CONTROL.F = FSpeed
-                    elseif KEY:lower() == 's' then
-                        CONTROL.B = -FSpeed
-                    elseif KEY:lower() == 'a' then
-                        CONTROL.L = -FSpeed
-                    elseif KEY:lower() == 'd' then 
-                        CONTROL.R = FSpeed
-                    end
-                end)
-                Mouse.KeyUp:connect(function(KEY)
-                    if KEY:lower() == 'w' then
-                        CONTROL.F = 0
-                    elseif KEY:lower() == 's' then
-                        CONTROL.B = 0
-                    elseif KEY:lower() == 'a' then
-                        CONTROL.L = 0
-                    elseif KEY:lower() == 'd' then
-                        CONTROL.R = 0
-                    end
-                end)
-            FLY()
-            LocalP.Character.HumanoidRootPart.Anchored = false
-        else
-        if LocalP.Character and LocalP.Character:FindFirstChild("Float") then
-            LocalP.Character:FindFirstChild("Float"):Destroy()
-        end
-        local AnimationTracks = LocalP.Character.Humanoid:GetPlayingAnimationTracks()
-        for i, track in pairs (AnimationTracks) do
-            if track.Name ~= "WalkAnim" or track.Name == "Walk" or track.Name == "Fires" then
-                track:Stop()
-            end
-        end
-        FLYING = false
-    end
-end]]--
-
 local function togglefly()
-    Flying = not Flying
+    flying = not flying
     local currenttext = ""
-    if Flying == true then
-        currenttext = "Fly: true"
-        for i,v in pairs(Seats) do
-            if v.Parent ~= nil then
-                v.Parent = RStorage
-            end
-        end
+    if flying == true then
+        currenttext = "FLIGHT is now turned ON!"
     else
-        currenttext = "Fly: false"
-        for i,v in pairs(Seats) do
-            if v.Parent ~= nil then
-                v.Parent = game.Workspace
-            end
-        end
+        currenttext = "FLIGHT is now turned OFF!"
     end
-    Notify("Citizen", currenttext, "", 3)
-    local T = LocalP.Character.HumanoidRootPart or LocalP.Character:FindFirstChild("Torso")
-    if Flying and LocalP.Character:FindFirstChild("Humanoid") then
-        local Float = INew("Part", LocalP.Character)
-        Float.Name = "Float"
-        Float.Transparency = 1
-        Float.Size = Vector3.new(6,1,6)
-        Float.Anchored = true
-        LocalP.Character.HumanoidRootPart.Anchored = true
-        local CONTROL = {F = 0, B = 0, L = 0, R = 0}
-        local lCONTROL = {F = 0, B = 0, L = 0, R = 0}
-        local SPEED = 0
-            local function FLY()
-                FLYING = true
-                local BG = INew("BodyGyro", T)
-                local BV = INew("BodyVelocity", T)
-	            BG.P = 8e8
-                BG.maxTorque = Vec3(9e9, math.huge, 9e9)
-                BG.cframe = T.CFrame
-                BV.maxForce = Vec3(math.huge, 9e9, math.huge)
-                    coroutine.resume(coroutine.create(function()
-                    wait()
-                        repeat RService.Heartbeat:Wait()
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "notification";
+        Text = currenttext;
+        Icon = "rbxassetid://2541869220";
+        Duration = 1.3;
+    })
+    if flying then -- BIG CREDIT TO IY AND ROCKY'S ADMIN
+        if LocalP.Character ~= nil then
+            if LocalP.Character:FindFirstChild("HumanoidRootPart") and LocalP.Character:FindFirstChild("Humanoid") then
+                local Float = Instance.new('Part', LocalP.Character)
+                Float.Name = "Float"
+                Float.Transparency = 1
+                Float.Size = Vector3.new(6,1,6)
+                Float.Anchored = true
+                LocalP.Character.HumanoidRootPart.Anchored = true
+                local T = LocalP.Character.HumanoidRootPart
+                local CONTROL = {F = 0, B = 0, L = 0, R = 0}
+                local lCONTROL = {F = 0, B = 0, L = 0, R = 0}
+                local SPEED = 0
+                local function FLY()
+                    FLYING = true
+                    local BG = Instance.new('BodyGyro', T)
+                    local BV = Instance.new('BodyVelocity', T)
+	            BG.P = 9e4
+                    BG.maxTorque = Vector3.new(9e9, 9e9, 9e9)
+                    BG.cframe = T.CFrame
+                    BV.velocity = Vector3.new(0, 0.1, 0)
+                    BV.maxForce = Vector3.new(9e9, 9e9, 9e9)
+                    spawn(function()
+                        repeat wait()
                         if CONTROL.L + CONTROL.R ~= 0 or CONTROL.F + CONTROL.B ~= 0 then
                             SPEED = 50
                         elseif not (CONTROL.L + CONTROL.R ~= 0 or CONTROL.F + CONTROL.B ~= 0) and SPEED ~= 0 then
@@ -237,7 +133,7 @@ local function togglefly()
                         elseif (CONTROL.L + CONTROL.R) == 0 and (CONTROL.F + CONTROL.B) == 0 and SPEED ~= 0 then
                             BV.velocity = ((workspace.CurrentCamera.CoordinateFrame.lookVector * (lCONTROL.F + lCONTROL.B)) + ((workspace.CurrentCamera.CoordinateFrame * CFrame.new(lCONTROL.L + lCONTROL.R, (lCONTROL.F + lCONTROL.B) * 0.2, 0).p) - workspace.CurrentCamera.CoordinateFrame.p)) * SPEED
                         else
-                            BV.velocity = Vec3(0, 0, 0)
+                            BV.velocity = Vector3.new(0, 0.1, 0)
                         end
                         BG.cframe = workspace.CurrentCamera.CoordinateFrame
                         until not FLYING
@@ -246,20 +142,20 @@ local function togglefly()
                         SPEED = 0
                         BG:destroy()
                         BV:destroy()
-                    end))
+                    end)
                 end
-                Mouse.KeyDown:connect(function(KEY)
+                mouse.KeyDown:connect(function(KEY)
                     if KEY:lower() == 'w' then
-                        CONTROL.F = FSpeed
+                        CONTROL.F = flyspeed
                     elseif KEY:lower() == 's' then
-                        CONTROL.B = -FSpeed
+                        CONTROL.B = -flyspeed
                     elseif KEY:lower() == 'a' then
-                        CONTROL.L = -FSpeed
+                        CONTROL.L = -flyspeed 
                     elseif KEY:lower() == 'd' then 
-                        CONTROL.R = FSpeed
+                        CONTROL.R = flyspeed
                     end
                 end)
-                Mouse.KeyUp:connect(function(KEY)
+                mouse.KeyUp:connect(function(KEY)
                     if KEY:lower() == 'w' then
                         CONTROL.F = 0
                     elseif KEY:lower() == 's' then
@@ -270,24 +166,7 @@ local function togglefly()
                         CONTROL.R = 0
                     end
                 end)
-            FLY()
-            LocalP.Character.HumanoidRootPart.Anchored = false
-        else
-        if LocalP.Character and LocalP.Character:FindFirstChild("Float") then
-            LocalP.Character:FindFirstChild("Float"):Destroy()
-        end
-        local AnimationTracks = LocalP.Character.Humanoid:GetPlayingAnimationTracks()
-        for i, track in pairs (AnimationTracks) do
-            if track.Name ~= "WalkAnim" or track.Name == "Walk" or track.Name == "Fires" then
-                track:Stop()
-            end
-        end
-        FLYING = false
-    end
-end
-
-
-
+                FLY()
 
 local function gnpt()
     local plrs = {} 
