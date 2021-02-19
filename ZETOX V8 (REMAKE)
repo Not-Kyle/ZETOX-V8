@@ -1055,8 +1055,25 @@ DJump is a back flip
 Priest Anim
 Dog Anim 
 Rejoin
+--------------------------------------------------------------------------------------
+UPDATES
+--------------------------------------------------------------------------------------
+Updates to the script
+-Chat Spy
+-New Color
+-Reset Button
+-Good Buttons
+-------------------------------------------------------------------------------------
+FUTURE UPDATES
+-------------------------------------------------------------------------------------
+Fly fixed
+Fix AirWalk
+Add Camlocks
+Add No Slow
+Notifactions
+Add TpBypass
+Add Flyspeed
 ]])
-
 --THIS SCRIPT WAS MADE BY 703OPPOSITION
 --THIS SCRIPT WAS MADE BY KYLE#1780
 public = false
