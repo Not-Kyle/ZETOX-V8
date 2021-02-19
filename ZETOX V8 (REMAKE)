@@ -1050,7 +1050,7 @@ Fly button
 Ive fixed it to no longer reset when you press F or press Fly
 But all it does is jump boost
 I am working on it
-))]
+]])
 --THIS SCRIPT WAS MADE BY 703OPPOSITION
 --THIS SCRIPT WAS MADE BY KYLE#1780
 public = false
