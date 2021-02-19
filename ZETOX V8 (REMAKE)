@@ -2,11 +2,11 @@ game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents")
 local Players, RService, RStorage, Uis, TweenService, TPService = game:GetService("Players"), game:GetService("RunService"), game:GetService("ReplicatedStorage"), game:GetService("UserInputService"), game:GetService("TweenService"), game:GetService("TeleportService");
 local LocalP, Mouse = Players.LocalPlayer, Players.LocalPlayer:GetMouse()
 local Chat, Mute, UD, UD2, Vec3, Vec2, INew, CordCamera, CF = RStorage.DefaultChatSystemChatEvents.SayMessageRequest, RStorage.DefaultChatSystemChatEvents.MutePlayerRequest, UDim.new, UDim2.new, Vector3.new, Vector2.new, Instance.new, workspace.CurrentCamera.CoordinateFrame, CFrame.new
-local Teleporting, Flying, FirstFly, Airwalk, Noclip, Animating, SuperSpeed, AntiAim, Aimbot, ItemEsp, GuardOn = true, true, true, true, true, true, true, true, true, true, true, true
+local Teleporting, Flying, FirstFly, Airwalk, Noclip, Animating, SuperSpeed, AntiAim, Aimbot, ItemEsp, GuardOn = false, false, true, false, false, false, false, false, false, false, false, false
 local GetJumpAnim, GetIdleAnim, GetWalkAnim = LocalP.Character.Animate.jump:GetChildren(), LocalP.Character.Animate.idle:GetChildren(), LocalP.Character.Animate.walk:GetChildren();
 local FSpeed, TPSpeed, WSpeed, AV = 8, 4, 150, 4
 local AVDKey, AVUKey, FlyKey = "l", "k", "f";
-local GuardV2 = {"Hey ZKid want to die eh?", "Which jew just shot me"}
+local GuardV2 = {"Garbage"}
 local Seats = {}
 local Keys = {
     ["W"] = false;["A"] = false;
@@ -1043,7 +1043,14 @@ Add No Slow
 Notifactions
 Add TpBypass
 Add Flyspeed
-]])
+-------------------------------------------------------------------------------------
+CURRENTLY WORKING ON
+-------------------------------------------------------------------------------------
+Fly button
+Ive fixed it to no longer reset when you press F or press Fly
+But all it does is jump boost
+I am working on it
+))]
 --THIS SCRIPT WAS MADE BY 703OPPOSITION
 --THIS SCRIPT WAS MADE BY KYLE#1780
 public = false
