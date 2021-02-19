@@ -95,15 +95,15 @@ local function togglefly()
             end
         end
     else
-        currenttext = "Fly: true"
+        currenttext = "Fly: false"
         for i,v in pairs(Seats) do
             if v.Parent ~= nil then
                 v.Parent = game.Workspace
             end
         end
     end
-    Notify("Citizen", currenttext, "", 3)
-    if flying then -- BIG CREDIT TO IY AND ROCKY'S ADMIN
+    Notify("Zetox", currenttext, "", 3)
+    if flying then
         if LocalP.Character ~= nil then
             if LocalP.Character:FindFirstChild("HumanoidRootPart") and LocalP.Character:FindFirstChild("Humanoid") then
                 local Float = Instance.new('Part', LocalP.Character)
