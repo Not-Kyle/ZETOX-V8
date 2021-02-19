@@ -2,7 +2,7 @@ game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents")
 local Players, RService, RStorage, Uis, TweenService, TPService = game:GetService("Players"), game:GetService("RunService"), game:GetService("ReplicatedStorage"), game:GetService("UserInputService"), game:GetService("TweenService"), game:GetService("TeleportService");
 local LocalP, Mouse = Players.LocalPlayer, Players.LocalPlayer:GetMouse()
 local Chat, Mute, UD, UD2, Vec3, Vec2, INew, CordCamera, CF = RStorage.DefaultChatSystemChatEvents.SayMessageRequest, RStorage.DefaultChatSystemChatEvents.MutePlayerRequest, UDim.new, UDim2.new, Vector3.new, Vector2.new, Instance.new, workspace.CurrentCamera.CoordinateFrame, CFrame.new
-local Teleporting, Flying, FirstFly, Airwalk, Noclip, Animating, SuperSpeed, AntiAim, Aimbot, ItemEsp, GuardOn = false, false, true, false, false, false, false, false, false, false, false, false
+local Teleporting, Flying, FirstFly, Airwalk, Noclip, Animating, SuperSpeed, AntiAim, Aimbot, ItemEsp, GuardOn = false, false, false, false, false, false, false, false, false, false, false, false
 local GetJumpAnim, GetIdleAnim, GetWalkAnim = LocalP.Character.Animate.jump:GetChildren(), LocalP.Character.Animate.idle:GetChildren(), LocalP.Character.Animate.walk:GetChildren();
 local FSpeed, TPSpeed, WSpeed, AV = 8, 4, 150, 4
 local AVDKey, AVUKey, FlyKey = "l", "k", "f";
@@ -957,7 +957,7 @@ print([[
 ZETOX V8 Keybinds --(BY KYLE NOW)-- All of this is without a real script. Use Zetox with "Citizens, Aidez, Drpoppa, Cyrus, Amnesia, and other shit
 best scripts are Aidez and Citizens (Zetox is made for Citizens basically)"
 
-Press F to Fly resets you for sum reason bad scripting not me
+Press F to Fly
 Press X to Noclip
 Press K to Increase your Aimvelocity By 1
 Press L to Decrease your aimvelocity By 1
