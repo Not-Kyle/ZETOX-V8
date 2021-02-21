@@ -990,7 +990,7 @@ The fly is very broken on the script it detects you're reseting. (Use Aidez or C
 RESET
 --------------------------------------------------------------------------------------
 I am adding a reset button to the script it wont be on the panel is works in the background
-To use the reset button press P
+To use the reset button press O
 I have made this reset button myself
 --------------------------------------------------------------------------------------
 THE STREETS
@@ -1123,5 +1123,5 @@ function onKeyPress(actionName, userInputState, inputObject)
        game.Players.LocalPlayer.Character:BreakJoints()
    end
 end
-game.ContextActionService:BindAction("keyPress", onKeyPress, false, Enum.KeyCode.P)
+game.ContextActionService:BindAction("keyPress", onKeyPress, false, Enum.KeyCode.O)
  -- press P to reset you fucking loser
