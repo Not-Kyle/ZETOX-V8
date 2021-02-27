@@ -679,21 +679,18 @@ Mouse.KeyDown:Connect(function(Key)
     end
 end)
 
-Mouse.KeyDown:Connect(function(Key)
-    local AVDKey = "l"
-    if Key == AVDKey then 
-        AV = AV - 1 
-        Notify("ZETOX", "Aimvelocity: "..tonumber(AV), "", 3)
-    end
-end)
- -- Accidentally Alt-F4'd out of synapse and had to redo so much shit
-Mouse.KeyDown:Connect(function(Key)
-    local AVUKey = "l"
-    if Key == AVDKey then 
-        AV = AV + 1 
-        Notify("ZETOX", "Aimvelocity: "..tonumber(AV), "", 3)
-    end
-end)
+local function AimbotToCFrame()
+local CFrameToReturn;
+local TargetPart = AimlockTarget.FindFirstChild(AimlockTarget,'RealHumanoidRootPart') or AimlockTarget.FindFirstChild(AimlockTarget,'Torso')
+	if TargetPart and AimMode == "OldPrediction" then 
+		CFrameToReturn = TargetPart.CFrame + TargetPart.Velocity / AimbotVelocity
+	elseif TargetPart and AimMode == "Prediction" then
+		CFrameToReturn = (TargetPart.CFrame + TargetPart.Velocity / (PlayersPing < 0.26 and 5 or 7.5)) + (TargetPart.RotVelocity / (PlayersPing < 0.26 and 5 or 7.5))
+	elseif AimlockTarget.FindFirstChild(AimlockTarget,AimMode) then 
+		CFrameToReturn = AimlockTarget[AimMode].CFrame
+	end
+	return CFrameToReturn
+end
 
 ItemEsp_Box.MouseButton1Down:Connect(function()
 function esp(instance)
